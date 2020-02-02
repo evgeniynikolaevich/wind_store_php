@@ -9,14 +9,14 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class MainController extends AbstractController
 {   
     /**
-     * @Route("/")
+     * @Route("/", name="main")
      */
 
     public  function showAction()
 
     {
         $number = 1;
-        return $this->render('base/base.html.twig',['value'=>$number]);   
+        return $this->render('main/main.html.twig',['res'=>$number]);   
     }
 }
 ?>

@@ -3,11 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
+  </head>
+    <body> 
+        {% block header %}
+
+       <div class="header">
+        <a href="{{ path('main') }}">Продукты и услуги</a>
+        <a href="{{ path('main') }}">Компания</a>
+        <a href="{{ path('main') }}">Проекты</a>
+        <a href="{{ path('main') }}">Блог</a>
+        <a href="{{ path('main') }}">Доставка</a>
+        <a href="{{ path('calculator') }}">Онлайн-калькулятор</a>
+        <a href="{{ path('main') }}">Контакты</a>
+      </div> 
+      {% endblock %}    
         {% block body %}
-        {{value}}
+        
         {% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
