@@ -8,18 +8,35 @@
         {% endblock %}
     </head>
     <body> 
-        {% block header %}
-
-       <div class="header">
-        <a href="{{ path('main') }}">Продукты и услуги</a>
-        <a href="{{ path('main') }}">Компания</a>
-        <a href="{{ path('main') }}">Проекты</a>
-        <a href="{{ path('main') }}">Блог</a>
-        <a href="{{ path('main') }}">Доставка</a>
-        <a href="{{ path('calculator') }}">Онлайн-калькулятор</a>
-        <a href="{{ path('main') }}">Контакты</a>
-      </div> 
-      {% endblock %}    
+        <div class="upper-section">
+          {% block header %}
+            <div class="header">
+                <nav class="main-nav">
+                    <ul class="main-nav-list">
+                        <li>
+                            <a href="{{ path('main') }}">Продукты и услуги</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('main') }}">Компания</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('main') }}">Проекты</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('main') }}">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('calculator') }}">Онлайн-калькулятор</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('main') }}">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> 
+           {% endblock %} 
+        </div>
+          
         {% block body %}
         
         {% endblock %}
