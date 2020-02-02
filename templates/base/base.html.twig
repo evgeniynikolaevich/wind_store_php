@@ -3,7 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-  </head>
+        {% block stylesheets %}
+            <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
+        {% endblock %}
+    </head>
     <body> 
         {% block header %}
 
