@@ -2,13 +2,21 @@
 
 namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
-class MainController
+use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
+
+class MainController extends AbstractController
 {   
+    /**
+     * @Route("/")
+     */
 
     public  function showAction()
+
     {
-     return new Response("Under sea");    
+        $number = 1;
+        return $this->render('base/base.html.twig',['value'=>$number]);   
     }
 }
 ?>
