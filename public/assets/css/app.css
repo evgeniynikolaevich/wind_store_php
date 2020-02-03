@@ -13,7 +13,7 @@
   /* display: flex; */
 }
 .above-container{
-  background-color: red;
+  /* background-color: red; */
   margin: 44px 60px 0px 60px;
   display: flex;
   max-height: 100px;
@@ -24,7 +24,7 @@
 /* left side logo with-EURUS */
 .above-header-left-side{
   width: 50%;
-  background-color: violet;
+  /* background-color: violet; */
 }
 .main-logo-left{
   width: 50%;

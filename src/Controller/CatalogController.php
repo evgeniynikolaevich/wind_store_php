@@ -12,8 +12,21 @@ class CatalogController extends AbstractController
      */
     public function index()
     {
+        $content = [
+            'power'=> 380,
+
+        ];
+
+
         return $this->render('catalog/index.html.twig', [
             'controller_name' => 'CatalogController',
+            'title' => 'каталог',
+            'content' =>$content
         ]);
+    }
+    public function for_catalog()
+    {
+        //from_base
+        
     }
 }
