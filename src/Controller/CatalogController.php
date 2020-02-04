@@ -27,6 +27,7 @@ class CatalogController extends AbstractController
     public function for_catalog()
     {
         //from_base
-        
+
     }
+
 }
