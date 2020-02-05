@@ -1,0 +1,123 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.upper-section{
+  margin-bottom: 44px;
+}
+.above-header{
+  
+  /* display: flex; */
+}
+.above-container{
+  /* background-color: red; */
+  margin: 44px 60px 0px 60px;
+  display: flex;
+  max-height: 100px;
+  height: 100px;
+}
+
+
+/* left side logo with-EURUS */
+.above-header-left-side{
+  width: 50%;
+  /* background-color: violet; */
+}
+.main-logo-left{
+  width: 50%;
+  text-align: center;
+  margin: 20px;
+  margin-top: 10px;
+
+}
+.upper-logo a{
+  padding-bottom: 20px;
+}
+.bottom-logo {
+}
+.main-logo-right{
+  /* TODO refactor this by 50% container */
+  width: 50%;
+  position: absolute;
+  right: 195px;
+  top: 55px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3A3939;
+}
+.main-logo-place{
+  margin: 5px;
+}
+.main-logo-telephone{
+  margin: 5px;
+}
+
+/* RIGHT SIDE LOGO WITHOUT EURUS */
+
+
+.above-header-right-side{
+  width: 50%;
+  background-color: lightskyblue;
+}
+
+
+
+
+
+
+
+
+
+
+.header{
+     background-color: #7BA39B;
+     display: flex;
+	  align-items: center;
+	  justify-content: space-around;
+	  flex-wrap: wrap;
+}
+.header a {
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  .header a:hover {
+    background-color: #E4F0ED;
+    color: black;
+    /* transition: all .2s ease-in-out 0s;   */
+    padding: 5px 5px;
+  }
+    .header a.active {
+    background-color: red;
+    /* color: white; */
+
+
+  }
+  .main-nav ul {
+    /* margin: 1em 0 .5em; */
+    text-align: center;
+  }
+  .main-nav li {
+    display: inline;
+  }
+  .main-nav a {
+    display: inline-block;
+    padding: .5em 1.5em;
+  }

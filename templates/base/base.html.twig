@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        {% block stylesheets %}
+            <link rel="stylesheet" href="assets/css/app.css">
+        {% endblock %}
+    </head>
+    <body> 
+          {% block header %}
+        <div class="upper-section">
+          <div class="above-header">
+              <div class="above-container">
+                <div class="above-header-left-side">
+                    <div class="main-logo-left">
+                        <div class="upper-logo">
+                            <a href="{{ path('main') }}">
+                                <img src="assets/img/base/main_logo.png">
+                                <div class="bottom-logo">
+                                    <img src="assets/img/base/wind_d.png">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main-logo-right">
+                        <p class="main-logo-place">
+                            Caнкт-Петербург
+                        </p>
+                        <p class="main-logo-telephone">
+                             +7 (812) 114-31-11
+                        </p>
+                    </div>
+                </div>
+                <div class="above-header-right-side">
+  
+                </div>
+              </div>
+                <div class="header">
+                    <nav class="main-nav">
+                        <ul class="main-nav-list">
+                            <li>
+                                <a href="{{ path('main') }}">Продукты и услуги</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('main') }}">Компания</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('projects') }}">Проекты</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('delivery') }}">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('calculator') }}">Онлайн-калькулятор</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('main') }}">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>  
+           {% endblock %} 
+        </div>
+          
+
+        {% block body %}
+        
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
