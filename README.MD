@@ -36,7 +36,14 @@ commands:
     
     sudo apt-get install composer
     
+    
     composer update
+	
+    
+    composer require symfony/web-server-bundle 4.4
+	
+    composer require symfony/http-foundation
+
 
     confugure you ini file:
 
