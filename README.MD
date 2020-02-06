@@ -13,7 +13,7 @@ commands:
 
     do migration:
         php bin/console doctrine:migrations:migrate
-    
+
     make_new_controller:
         php bin/console make:controller
 
@@ -33,17 +33,18 @@ commands:
 
     project depend
     ==================================================
-    
+
     sudo apt-get install composer
-    
-    
+
+
     composer update
-	
-    
+
+
     composer require symfony/web-server-bundle 4.4
-	
+
     composer require symfony/http-foundation
 
+    composer require admin
 
     confugure you ini file:
 
