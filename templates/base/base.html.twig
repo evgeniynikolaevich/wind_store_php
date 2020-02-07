@@ -5,10 +5,12 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         {% block stylesheets %}
-            <link rel="stylesheet" href="assets/css/app.css">
+            <link rel="stylesheet" href="assets/css/base.css">
         {% endblock %}
     </head>
     <body>
+      <div class="main-container">
+
           {% block header %}
         <div class="upper-section">
           <div class="above-header">
@@ -37,7 +39,6 @@
                   <div class="left-half">
                   </div>
                   <div class="right-half">
-                    <div class="logos">
                       <div class="user">
                         <a href="#">
                           <img src="assets/img/base/user.png" alt="">
@@ -58,7 +59,6 @@
                           <img src="assets/img/base/search.png" alt="">
                         </a>
                       </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -95,5 +95,7 @@
 
         {% endblock %}
         {% block javascripts %}{% endblock %}
+
+      </div>
     </body>
 </html>
