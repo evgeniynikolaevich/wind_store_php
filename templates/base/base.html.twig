@@ -5,10 +5,12 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         {% block stylesheets %}
-            <link rel="stylesheet" href="assets/css/app.css">
+            <link rel="stylesheet" href="assets/css/base.css">
         {% endblock %}
     </head>
-    <body> 
+    <body>
+      <div class="main-container">
+
           {% block header %}
         <div class="upper-section">
           <div class="above-header">
@@ -34,7 +36,30 @@
                     </div>
                 </div>
                 <div class="above-header-right-side">
-  
+                  <div class="left-half">
+                  </div>
+                  <div class="right-half">
+                      <div class="user">
+                        <a href="#">
+                          <img src="assets/img/base/user.png" alt="">
+                        </a>
+                      </div>
+                      <div class="shopping">
+                        <a href="#">
+                          <img src="assets/img/base/shopping-cart.png" alt="">
+                        </a>
+                      </div>
+                      <div class="compare">
+                        <a href="#">
+                          <img src="assets/img/base/balance.png" alt="">
+                        </a>
+                      </div>
+                      <div class="search">
+                        <a href="#">
+                          <img src="assets/img/base/search.png" alt="">
+                        </a>
+                      </div>
+                  </div>
                 </div>
               </div>
                 <div class="header">
@@ -61,14 +86,16 @@
                         </ul>
                     </nav>
                 </div>
-            </div>  
-           {% endblock %} 
+            </div>
+           {% endblock %}
         </div>
-          
+
 
         {% block body %}
-        
+
         {% endblock %}
         {% block javascripts %}{% endblock %}
+
+      </div>
     </body>
 </html>
