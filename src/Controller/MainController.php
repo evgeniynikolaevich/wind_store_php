@@ -18,8 +18,7 @@ class MainController extends AbstractController
     {
 
         $number = 1;
-        $generators = $rep->findAll();
-        return $this->render('main/main.html.twig',['res'=>$number,'generators'=> $generators]);
+        return $this->render('main/main.html.twig',['res'=>$number,]);
     }
 }
 ?>
