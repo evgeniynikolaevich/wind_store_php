@@ -4,20 +4,15 @@
   list-style-type: none;
   text-decoration: none;
 }
-<<<<<<< Updated upstream:public/assets/css/app.css
-
-=======
 .main-container{
   display: flex;
   flex-direction: column;
 
 }
->>>>>>> Stashed changes:public/assets/css/base.css
 .upper-section{
-  margin-bottom: 44px;
 }
 .above-header{
-  
+
   /* display: flex; */
 }
 .above-container{
@@ -32,13 +27,13 @@
 /* left side logo with-EURUS */
 .above-header-left-side{
   width: 50%;
-  /* background-color: violet; */
+  display: flex;
+  justify-content: center;
 }
 .main-logo-left{
   width: 50%;
   text-align: center;
   margin: 20px;
-  margin-top: 10px;
 
 }
 .upper-logo a{
@@ -47,17 +42,16 @@
 .bottom-logo {
 }
 .main-logo-right{
-  /* TODO refactor this by 50% container */
   width: 50%;
-  position: absolute;
-  right: 195px;
-  top: 55px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #3A3939;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 .main-logo-place{
   margin: 5px;
@@ -70,11 +64,9 @@
 
 
 .above-header-right-side{
+  display: flex;
   width: 50%;
-  background-color: lightskyblue;
 }
-<<<<<<< Updated upstream:public/assets/css/app.css
-=======
 .left-half-header-logos{
   width: 50%;
 }
@@ -85,19 +77,21 @@
   align-items: center;
 }
 .right-half-header-logos a{
->>>>>>> Stashed changes:public/assets/css/base.css
 
+  padding: 15px;
+}
 
 
 
 
         /* main header settings */
 .header{
-     background-color: #7BA39B;
-     display: flex;
-	  align-items: center;
-	  justify-content: space-around;
-	  flex-wrap: wrap;
+    background-color:#7BA39B;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 70px;
 }
 .header a {
     color: white;
@@ -117,17 +111,11 @@
   .header a:hover {
     background-color: #E4F0ED;
     color: black;
-<<<<<<< Updated upstream:public/assets/css/app.css
-    /* transition: all .2s ease-in-out 0s;   */
-    padding: 5px 5px;
-=======
     transition: all .2s ease-in-out 0s;
     border-bottom: none;
     border-radius: 0px;
->>>>>>> Stashed changes:public/assets/css/base.css
   }
     .header a.active {
-    background-color: red;
     /* color: white; */
 
 
@@ -142,9 +130,6 @@
   .main-nav a {
     display: inline-block;
     padding: .5em 1.5em;
-<<<<<<< Updated upstream:public/assets/css/app.css
-  }
-=======
   }
 
 
@@ -228,4 +213,3 @@
   align-items: center;
 
 }
->>>>>>> Stashed changes:public/assets/css/base.css

@@ -46,11 +46,7 @@ class WindGenerator
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $no;
 
-    /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Projects", mappedBy="wind_generator")
-     */
     private $projects;
 
     public function __construct()
@@ -123,17 +119,6 @@ class WindGenerator
         return $this;
     }
 
-    public function getNo(): ?string
-    {
-        return $this->no;
-    }
-
-    public function setNo(string $no): self
-    {
-        $this->no = $no;
-
-        return $this;
-    }
 
     /**
      * @return Collection|Projects[]

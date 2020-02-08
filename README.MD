@@ -55,3 +55,10 @@ commands:
     pdo, mysql
 
     ./run.sh
+
+
+
+TODO  
+   -fix for in main Controller
+
+   -fix bound projects and generators  in models

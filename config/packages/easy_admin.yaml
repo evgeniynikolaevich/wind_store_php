@@ -6,3 +6,4 @@ easy_admin:
         class: App\Entity\WindGenerator
       projects:
         class: App\Entity\Projects
+
