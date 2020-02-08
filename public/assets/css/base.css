@@ -139,11 +139,11 @@
                       /* FOOTER */
                       /* main settings */
 .bottom-section{
-  /* background-color:#3A3939; */
+  background-color:#3A3939;
   height: 200px;
+  color: #FFFFFF;
 }
 .footer-container{
-  background-color:red;
   margin: 12px 75px 12px 75px;
   height: inherit;
   display: flex;
@@ -162,7 +162,6 @@
 .left-side-footer{
   display: flex;
   width: 25%;
-  background-color: blue;
 
 }
 .left-side-left-half-footer{
@@ -171,7 +170,8 @@
   justify-content: center;
 }
 .left-side-footer-contacts{
-  display: block ruby
+  display: block ruby;
+  color:#FFFFFF;
 }
 /* ================================================================== */
                         /* CENTER-SIDE_FOOTER */
@@ -179,7 +179,6 @@
 .center-side-footer{
   display: flex;
   width: 50%;
-  background-color: pink;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -189,27 +188,64 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 131%;
-  display: flex;
-  align-items: center;
   letter-spacing: -0.05em;
-  color:
-  #FFFFFF;
+
 }
 .center-side-footer a{
   padding: 1px 1px 3px 5px;
+  color:#FFFFFF;
 }
 
 
  /* ====================================================================== */
                         /* RIGHT-SIDE_FOOTER */
 .right-side-footer{
-  display: flex;
   width: 25%;
-  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.social{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 131%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
 .social-link{
+  width: inherit;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
+}
+
+.social-link a{
+  background:url("/assets/img/base/social-icons.png") transparent no-repeat;;
+  width: 26px;
+  height: 26px;
+}
+.facebook a{
+  background-position: -10px;
+}
+.twitter {
+  background-position: -40px;
+}
+.youtube {
+  background-position: -40px;
+}
+.instagram {
+  background-position: -40px;
+}
+
+
+.space-social{
+ padding: 10px;
 
 }
