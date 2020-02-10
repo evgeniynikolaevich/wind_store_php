@@ -228,22 +228,28 @@
 
 .social-link a{
   background:url("/assets/img/base/social-icons.png") transparent no-repeat;;
-  width: 26px;
-  height: 26px;
-}
-.facebook a{
-  background-position: -10px;
-}
-.twitter {
-  background-position: -40px;
-}
-.youtube {
-  background-position: -40px;
-}
-.instagram {
-  background-position: -40px;
-}
+  width: 30px;
+  height: 30px;
 
+}
+a.facebook{
+  background-position: 0px;
+}
+a.twitter{
+  background-position: -40px;
+}
+a.youtube {
+  background-position: -80px;
+}
+a.instagram {
+  background-position: -120px;
+}
+a.contact-us{
+    color: #FFFFFF;
+}
+.in-social{
+  margin-left: 10px;
+}
 
 .space-social{
  padding: 10px;
