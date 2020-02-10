@@ -1,9 +1,4 @@
-easy_admin:
-  site_name: 'EURUS'
-  entities:
-        # change the following to the namespaces of your own entities
-      add_generator:
-        class: App\Entity\WindGenerator
-      projects:
-        class: App\Entity\Projects
-
+#easy_admin:
+#   entities:
+#      - App\Entity\WindGenerator
+#      - App\Entity\Projects

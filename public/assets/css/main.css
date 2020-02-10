@@ -1,6 +1,55 @@
 
 .main-pic{
-  height: 500px;
-  overflow: hidden;
+display: flex;
+flex-direction: row;
+background:url("/assets/img/main/main_place_view.png");
+width: 100%;
+height: 500px;
 
+}
+.left-side-main-pic{
+  display: flex;
+  width: 55%;
+  flex-direction: column;
+  justify-content: flex-start;;
+  margin-left: 90px;
+  margin-top: 60px;
+}
+.main-title-text{
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 70px;
+line-height: 72px;
+
+/* or 104% */
+display: flex;
+align-items: flex-end;
+letter-spacing: -0.055em;
+
+color: #FFFFFF;
+
+opacity: 0.9;
+}
+
+form button{
+  background:
+  #CE4F4F;
+  box-shadow: 2px 2px 12px
+  rgba(0, 0, 0, 0.2);
+  width: 270px;
+  height: 70px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.025em;
+  color:
+  #FFFFFF;
+  margin: 20px;
+      margin-top: 20px;
+  margin-top: 25px;
 }

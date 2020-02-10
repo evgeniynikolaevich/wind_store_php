@@ -3,8 +3,16 @@
         {% block title %}Welcome!{% endblock %}
                 {% block body %}
         <div class="main-pic">
-          <img src="assets/img/main/main_place_view.png" alt="">
+          <div class="left-side-main-pic">
+
+              <p class="main-title-text">Сохраняем энергию, деньги и планету</p>
+              <form class="look_catalog" action="{{ path('catalog') }}">
+                <button type="submit">Посмотреть каталог</button>
+              </form>
+
+          </div>
         </div>
+
 
         <p>
           Популярное
