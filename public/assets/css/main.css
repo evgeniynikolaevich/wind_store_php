@@ -1,5 +1,6 @@
 
 .main-pic{
+<<<<<<< HEAD
 display: flex;
 flex-direction: row;
 background:url("/assets/img/main/main_place_view.png");
@@ -53,4 +54,10 @@ form button{
   margin: 20px;
       margin-top: 20px;
   margin-top: 25px;
+=======
+  height: 500px;
+  overflow: hidden;
+
+
+>>>>>>> 0a2e7f4f2c56b7bb40cfb412d429b3e74e48ed85
 }

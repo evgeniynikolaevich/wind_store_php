@@ -1,4 +1,5 @@
 easy_admin:
+<<<<<<< HEAD
   site_name: "EURUS"
   entities:
     Generator:
@@ -17,3 +18,13 @@ easy_admin:
           - "power"
           - "voltage"
           - "type_generator"
+=======
+  site_name: 'EURUS'
+  entities:
+        # change the following to the namespaces of your own entities
+      add_generator:
+        class: App\Entity\WindGenerator
+      projects:
+        class: App\Entity\Projects
+
+>>>>>>> 0a2e7f4f2c56b7bb40cfb412d429b3e74e48ed85
