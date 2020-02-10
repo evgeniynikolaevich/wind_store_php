@@ -36,6 +36,11 @@ class Generator
      */
     private $type_generator;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $image;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -85,6 +90,18 @@ class Generator
     public function setTypeGenerator(string $type_generator): self
     {
         $this->type_generator = $type_generator;
+
+        return $this;
+    }
+
+    public function getImage(): ?string
+    {
+        return $this->image;
+    }
+
+    public function setImage(string $image): self
+    {
+        $this->image = $image;
 
         return $this;
     }

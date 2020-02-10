@@ -1,4 +1,19 @@
-#easy_admin:
-#   entities:
-#      - App\Entity\WindGenerator
-#      - App\Entity\Projects
+easy_admin:
+  site_name: "EURUS"
+  entities:
+    Generator:
+     class:  App\Entity\Generator
+     list:
+       fields:
+         - 'title'
+         - 'power'
+         - 'voltage'
+         - 'type_generator'
+         - { property: 'image', type: 'image', base_path: "/assets/img/" }
+       form:
+         fields:
+          - {property: "image", type: "file", label: "image_for_upload"}
+          - "title"
+          - "power"
+          - "voltage"
+          - "type_generator"
