@@ -12,14 +12,19 @@
 
           </div>
         </div>
-
-
         <p>
           Популярное
         </p>
-                <div class="good_cart">
+            {% for generator in generators%}
+            <div class="good_cart">
+              <p>{{generator.title}}</p>
+              <p>{{generator.power}}</p>
+              <p> {{generator.voltage}}</p>
+              <p> {{generator.TypeGenerator}}</p>
+              <img src="{{generator.image}}" alt="">
 
 
-                </div>
+            </div>
+            {% endfor %}
         {% endblock %}
         {% block javascripts %}{% endblock %}
