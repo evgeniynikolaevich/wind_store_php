@@ -4,7 +4,7 @@ namespace App\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-
+use App\Repository\GeneratorRepository;
 
 class MainController extends AbstractController
 {
@@ -12,12 +12,12 @@ class MainController extends AbstractController
      * @Route("/", name="main")
      */
 
-    public  function showAction()
+    public  function showAction(GeneratorRepository $repository)
 
     {
+        $generators = $repository->findAll();
 
-        $number = 1;
-        return $this->render('main/main.html.twig',['res'=>$number,]);
+        return $this->render('main/main.html.twig',['generators'=>$generators,"title" =>'главная']);
     }
 }
 ?>

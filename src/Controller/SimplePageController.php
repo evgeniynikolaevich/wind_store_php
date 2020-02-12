@@ -8,12 +8,22 @@ use Symfony\Component\Routing\Annotation\Route;
 class SimplePageController extends AbstractController
 {
     /**
-     * @Route("/simple/page", name="simple_page")
+     * @Route("/about", name="about")
      */
-    public function index()
+    public function about()
     {
-        return $this->render('simple_page/index.html.twig', [
+        return $this->render('simple_page/about.html.twig', [
             'controller_name' => 'SimplePageController',
         ]);
     }
+    /**
+     * @Route("/contacts", name="contacts")
+     */
+    public function contacts()
+    {
+        return $this->render('simple_page/contacts.html.twig', [
+            'controller_name' => 'SimplePageController',
+        ]);
+    }
+
 }
