@@ -15,16 +15,20 @@
         <p>
           Популярное
         </p>
+        <div class="generators">
+          <form class="" action="index.html" method="post">
             {% for generator in generators%}
-            <div class="good_cart">
               <p>{{generator.title}}</p>
               <p>{{generator.power}}</p>
               <p> {{generator.voltage}}</p>
               <p> {{generator.TypeGenerator}}</p>
               <img src="{{generator.image}}" alt="">
+              <button class="add-cart-button" type="submit" name="button">
+                добавить в корзину
+              </button>
+          </form>
 
-
-            </div>
+        </div>
             {% endfor %}
         {% endblock %}
         {% block javascripts %}{% endblock %}
