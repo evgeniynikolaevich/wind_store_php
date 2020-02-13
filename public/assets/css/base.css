@@ -69,12 +69,15 @@
 }
 .left-half-header-logos{
   width: 50%;
+  align-items: center;
+  display: flex;
 }
 .right-half-header-logos{
   width: 50%;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  justify-content: left;
 }
 .right-half-header-logos a{
 
@@ -244,7 +247,7 @@ a.youtube {
 a.instagram {
   background-position: -120px;
 }
-a.contact-us{
+i.contact-us{
     color: #FFFFFF;
 }
 .in-social{
