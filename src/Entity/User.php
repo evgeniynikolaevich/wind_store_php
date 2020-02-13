@@ -5,7 +5,8 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
-
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use App\Entity\Generator;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  * @UniqueEntity(fields={"email"}, message="There is already an account with this email")
@@ -33,7 +34,12 @@ class User implements UserInterface
      * @var string The hashed password
      * @ORM\Column(type="string")
      */
+
     private $password;
+    /**
+    * @ORM\Column(type="string", nullable=true)
+    */
+   private $session = null;
 
     public function getId(): ?int
     {
@@ -95,6 +101,23 @@ class User implements UserInterface
 
         return $this;
     }
+    public function getItemFromSession(string $item)
+    {
+        return $value = $this->session->get($item, 'none');
+    }
+    public function getAllFromSession()
+    {
+    }
+
+    public function setIntoSession(Generator $generator): self
+    {
+        $this->session->set($generator);
+
+    }
+
+
+
+
 
     /**
      * @see UserInterface
