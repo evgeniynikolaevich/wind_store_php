@@ -59,3 +59,24 @@ form button{
 
 >>>>>>> 0a2e7f4f2c56b7bb40cfb412d429b3e74e48ed85
 }
+.generators {
+  width: 100%;
+  background-color:red;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-content: flex-end;
+}
+.generator-for-sale{
+  display: flex;
+  flex-direction: column;
+}
+
+.back-generator{
+
+  width:100%;
+  height: 100%;
+}
