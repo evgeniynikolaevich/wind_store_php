@@ -9,56 +9,7 @@ use App\Entity\Generator;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Security;
 use App\Repository\GeneratorRepository;
-/*
-class CartForController
-{
-  private $session;
 
-  public function delete_from_cart(Sea)
-  {
-    $this->cart();
-
-  }
-
-
-  private function start_shopping()
-  {
-    $session = new Session();
-    $session->start();
-    // $session->set('name', 'Drak');
-    // $session->get('name');
-  }
-  private function continue_shopping()
-  {
-    $user_session_id = 1;
-    $this->session = $user_session_id;
-
-  }
-
-
-
-  public function cart_start()
-  {
-    if(!user->session)
-    {
-      $this->start_shopping();
-    }
-  }
-
-  public function __construct()
-  {
-    //check if user has bought
-    //return session
-
-      $this->current_user = 1#db manipulation check user session
-      $this->cart_start();
-
-  }
-
-
-}
-
-*/
 
 
 class CartController extends AbstractController

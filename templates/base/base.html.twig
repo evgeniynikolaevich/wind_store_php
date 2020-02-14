@@ -95,10 +95,18 @@
            {% endblock %}
         </div>
 
-        <div class="body-block">
-        {% block body %}
-
+        {% block reklama %}
         {% endblock %}
+        {% block main_title %}
+        {% endblock %}
+        <div class="body-block">
+          <div class="body-container">
+            {% block body %}
+            {% block generator%}
+            {% endblock %}
+            {% endblock%}
+
+          </div>
         </div>
         {% block javascripts %}{% endblock %}
       {% block footer %}

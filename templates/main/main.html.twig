@@ -1,7 +1,7 @@
         {% extends "base/base.html.twig"%}
 
         {% block title %}Welcome!{% endblock %}
-                {% block body %}
+        {% block reklama%}
         <div class="main-pic">
           <div class="left-side-main-pic">
 
@@ -12,22 +12,27 @@
 
           </div>
         </div>
-        <p>
-          Популярное
-        </p>
+        {% endblock %}
+        {% block main_title %}
+        <p сlass="main-title-block">{{main_title}}</p>
+        {% endblock %}
+        {% block body %}
         <div class="generators">
             {% for generator in generators%}
-              <p class="current_buy" >{{generator.title}}</p>
-              <p>{{generator.power}}</p>
-              <p> {{generator.voltage}}</p>
-              <p> {{generator.TypeGenerator}}</p>
-              <img src="{{generator.image}}" alt="">
-              <button class="add-cart-button" type="submit" name="button">
-                <a href="add_to_cart/{{generator.id}}">Купить</a>
-              </button>
-          </form>
-
-        </div>
+          <div class="generator-for-sale">
+            <form class="" action="/generators/{{generator.id}}" method="post">
+              <div class="back-generator" style="background: url({{generator.image}});">
+                    <p class="current_buy" >{{generator.title}}</p>
+                    <p>{{generator.power}}</p>
+                    <p> {{generator.voltage}}</p>
+                    <p> {{generator.TypeGenerator}}</p>
+                  </div>
+                  <button type="submit" name="button-info-about-generator">
+                    узнать подробнее
+                  </button>
+            </form>
+          </div>
             {% endfor %}
+        </div>
         {% endblock %}
         {% block javascripts %}{% endblock %}

@@ -17,15 +17,9 @@ class MainController extends AbstractController
     public  function showAction(GeneratorRepository $repository, SessionInterface $session, Request $request)
 
     {
-      $session = $request->getSession();
-      #if($session->get('cartElements') == '')
-    #  {
-        $my_cart = array();
-        $session->set('cartElements', $my_cart);
-
-    #  }
           $generators = $repository->findAll();
-        return $this->render('main/main.html.twig',['generators'=>$generators,"title" =>'главная']);
+        return $this->render('main/main.html.twig',['generators'=>$generators,"title" =>'главная',
+         'main_title' => 'популярное']);
     }
 }
 ?>
