@@ -36,11 +36,6 @@ class User implements UserInterface
      */
 
     private $password;
-    /**
-    * @ORM\Column(type="string", nullable=true)
-    */
-   private $session = null;
-
     public function getId(): ?int
     {
         return $this->id;
@@ -101,6 +96,7 @@ class User implements UserInterface
 
         return $this;
     }
+    /*
     public function getItemFromSession(string $item)
     {
         return $value = $this->session->get($item, 'none');
@@ -109,13 +105,13 @@ class User implements UserInterface
     {
     }
 
-    public function setIntoSession(Generator $generator): self
+    public function setIntoSession(Generator $generator)
     {
         $this->session->set($generator);
 
     }
 
-
+    */
 
 
 

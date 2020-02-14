@@ -1,5 +1,7 @@
 {% extends "base/base.html.twig"%}
 {% block title %}{{title}}{% endblock %}
             {% block body %}
-            {{id}}
-            {% endblock %}
+            {%for generator in in_cart%}
+            {{generator.title}}
+            {% endfor %}
+{% endblock %}
