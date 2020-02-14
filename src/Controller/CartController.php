@@ -67,13 +67,16 @@ class CartController extends AbstractController
      * @Route("/cart", name="cart")
      */
     public function index(SessionInterface $session, GeneratorRepository $generator )
-    {
-      $all_id_in_cart = $session->get('cart');
-      $generators_is_cart = array();
-      foreach ($all_id_in_cart as $id) {
-       $gen = $generator->find($id);
-       array_push($generators_is_cart,$gen);
-      }
+      {
+        $generators_is_cart = array();
+      if($session->get('cart')){
+        $all_id_in_cart = $session->get('cart');
+        $generators_is_cart = array();
+        foreach ($all_id_in_cart as $id) {
+          $gen = $generator->find($id);
+          array_push($generators_is_cart,$gen);
+        }
+        }
         return $this->render('cart/index.html.twig', [
             'controller_name' => 'CartController',
             'title' =>'Корзина',

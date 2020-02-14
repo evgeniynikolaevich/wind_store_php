@@ -1,7 +1,11 @@
 {% extends "base/base.html.twig"%}
 {% block title %}{{title}}{% endblock %}
             {% block body %}
+            {% if in_cart|length !=0 %}
             {%for generator in in_cart%}
             {{generator.title}}
             {% endfor %}
+            {% else %}
+            корзина пуста
+            {% endif %}
 {% endblock %}
