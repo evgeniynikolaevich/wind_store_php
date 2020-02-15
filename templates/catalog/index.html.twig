@@ -1,5 +1,25 @@
     {% extends "base/base.html.twig"%}
     {% block title %}{{title}}{% endblock %}
                 {% block body %}
-                {{content.power}}
+                <div class="catalog">
+                  <div class="generators">
+                    <div class="name-categotegory">
+                      <p> Генераторы Доступно: {{generators|length}}</p>
+                    </div>
+                    {% for generator in generators%}
+                    {{generator.title}}
+                    {{generator.power}}
+                    {{generator.voltage}}
+                    {% endfor %}
+                  </div>
+                  <div class="service">
+                    <div class="name-categotegory">
+                      <p>Сервисы Доступно: {{services|length}}</p>
+                    </div>
+                    {% for serv in services%}
+                    {{serv.title}}
+                    {{serv.price}}
+                    {% endfor %}
+                  </div>
+                </div>
                 {% endblock %}
