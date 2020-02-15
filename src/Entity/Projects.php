@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -32,8 +34,15 @@ class Projects
     private $picture;
 
     /**
-     * @ORM\Column(type="object")
+     * @ORM\ManyToMany(targetEntity="App\Entity\Generator", inversedBy="projects")
      */
+    private $generators;
+
+    public function __construct()
+    {
+        $this->generators = new ArrayCollection();
+    }
+
 
 
     public function getPlace(): ?string
@@ -71,5 +80,37 @@ class Projects
 
         return $this;
     }
+
+    /**
+     * @return Collection|Generator[]
+     */
+    public function getGenerators(): Collection
+    {
+        return $this->generators;
+    }
+
+    public function addGenerator(Generator $generator): self
+    {
+        if (!$this->generators->contains($generator)) {
+            $this->generators[] = $generator;
+            $generator->setProjects($this);
+        }
+
+        return $this;
+    }
+
+    public function removeGenerator(Generator $generator): self
+    {
+        if ($this->generators->contains($generator)) {
+            $this->generators->removeElement($generator);
+        }
+
+        return $this;
+    }
+    public function __toString()
+    {
+        return (string) $this->generator;
+    }
+
 
 }
