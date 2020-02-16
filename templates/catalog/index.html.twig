@@ -4,10 +4,12 @@
                 <div class="catalog">
                   <div class="generators">
                     <div class="name-categotegory">
-                      {#<p> Генераторы Доступно: {{generators|length}}</p>#}
+
+                     <p> Генераторы Доступно: {{generators|length}}</p>
                     </div>
                     {% for generator in generators%}
                     {% include '/catalog/generator.html.twig' %}
+
                     {% endfor %}
                   </div>
                   <div class="service">

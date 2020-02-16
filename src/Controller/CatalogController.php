@@ -5,8 +5,8 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Repository\GeneratorRepository;
-use App\Repository\ServiceRepository
-;
+use App\Repository\ServiceRepository;
+
 class CatalogController extends AbstractController
 {
     /**

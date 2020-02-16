@@ -31,10 +31,12 @@ class Service
      */
     private $price;
 
+
     /**
      * @ORM\Column(type="string", length=255)
      */
     private $image;
+
 
     public function getId(): ?int
     {
@@ -88,4 +90,5 @@ class Service
 
         return $this;
     }
+
 }
