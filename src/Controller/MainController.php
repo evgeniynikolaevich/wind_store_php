@@ -18,7 +18,6 @@ class MainController extends AbstractController
 
     {
           $generators = $repository->findAll();
-
         return $this->render('main/main.html.twig',['generators'=> array_slice($generators, 0 ,3),"title" =>'главная',
 
          'main_title' => 'популярное']);

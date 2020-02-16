@@ -12,23 +12,9 @@ use App\Repository\GeneratorRepository;
 
 
 
+
 class CartController extends AbstractController
 {
-
-
-    private function category_selector($category){
-      if($category == "services")
-      {
-
-
-      }
-      if($category == "generators")
-      {
-
-
-      }
-
-    }
 
     /**
      * @Route("/cart", name="cart")
@@ -55,7 +41,9 @@ class CartController extends AbstractController
      * @Route("/add_to_cart/{id}", name="add_to_cart")
      */
 
+
     public function add_to_cart(Request $request, $id)
+
     { #get generator by id
       #push to session user this stuff
       #redirect to cart
