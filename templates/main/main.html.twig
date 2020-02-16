@@ -2,37 +2,19 @@
 
         {% block title %}Welcome!{% endblock %}
         {% block reklama%}
-        <div class="main-pic">
-          <div class="left-side-main-pic">
 
-              <p class="main-title-text">Сохраняем энергию, деньги и планету</p>
-              <form class="look_catalog" action="{{ path('catalog') }}">
-                <div class="check-catalog">
-                    <input type="submit" name="" value="Посмотреть каталог">
-                </div>
-              </form>
-          </div>
-        </div>
+        {% include '/main/main_title.html.twig' %}
+
         {% endblock %}
         {% block main_title %}
         <p сlass="main-title-block">{{main_title}}</p>
         {% endblock %}
         {% block body %}
         <div class="generators">
-            {% for generator in generators%}
-          <div class="generator-for-sale">
-            <form class="" action="/generators/{{generator.id}}" method="post">
-              <div class="back-generator" style="background: url({{generator.image}});">
-                    <p class="current_buy" >{{generator.title}}</p>
-                    <p>{{generator.power}}</p>
-                    <p> {{generator.voltage}}</p>
-                    <p> {{generator.TypeGenerator}}</p>
-                  </div>
-                  <button type="submit" name="button-info-about-generator">
-                    узнать подробнее
-                  </button>
-            </form>
-          </div>
+          {% for generator in generators%}
+              <div class="generator-for-sale">
+                  {% include '/catalog/generator.html.twig' %}
+              </div>
             {% endfor %}
         </div>
         {% endblock %}

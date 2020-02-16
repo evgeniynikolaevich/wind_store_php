@@ -1,0 +1,37 @@
+.back-generator{
+  width: 410px;
+   height: 300px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+line-height: 36px;
+
+/* or 140% */
+text-transform: uppercase;
+
+/* black light */
+color: #3A3939;
+}
+.more-about-generator{
+
+display: flex;
+flex-direction: column;
+}
+.additional-info{
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	align-items: self-start;
+}
+.top{
+  display: flex;
+}
+.top{
+  display: flex;
+}
+}
+.additional-info p{
+  margin-left: 50px;
+
+}

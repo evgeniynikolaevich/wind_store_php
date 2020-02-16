@@ -8,6 +8,7 @@
         {% block stylesheets %}
             <link rel="stylesheet" href="assets/css/base.css">
             <link rel="stylesheet" href="assets/css/main.css">
+            <link rel="stylesheet" href="assets/css/goods.css">
         {% endblock %}
     </head>
     <body>
@@ -83,7 +84,9 @@
                                 <a href="{{ path('delivery') }}">Доставка</a>
                             </li>
                             <li>
-                                <a href="#">Онлайн-калькулятор</a>
+
+                                <a href="{{ path('faq') }}">Часто Задаваемые Вопросы</a>
+
                             </li>
                             <li>
                                 <a href="{{ path('contacts') }}">Контакты</a>
@@ -131,16 +134,16 @@
             </div>
           </div>
           <div class="center-side-footer">
-            <a href="#">Ветрогенераторы</a>
-            <a href="#">Обслуживание</a>
-            <a href="#">О нас</a>
-            <a href="#">Рекомендации</a>
-            <a href="#">Новости</a>
-            <a href="#">Карьера</a>
-            <a href="#">Проекты</a>
-            <a href="#">Доставка</a>
-            <a href="#">Контакты</a>
-            <a href="#">Онлайн-калькулятор</a>
+            <a href="{{ path('catalog') }}">Ветрогенераторы</a>
+            <a href="{{ path('catalog') }}">Обслуживание</a>
+            <a href="{{ path('catalog') }}">О нас</a>
+            <a href="{{ path('catalog') }}">Рекомендации</a>
+            <a href="{{ path('catalog') }}">Новости</a>
+            <a href="{{ path('catalog') }}">Карьера</a>
+            <a href="{{ path('catalog') }}">Проекты</a>
+            <a href="{{ path('catalog') }}">Доставка</a>
+            <a href="{{ path('catalog') }}">Контакты</a>
+            <a href="{{ path('catalog') }}">Онлайн-калькулятор</a>
           </div>
           <div class="right-side-footer">
               <div class="social">

@@ -5,9 +5,9 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\ServiceRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\NewsRepository")
  */
-class Service
+class News
 {
     /**
      * @ORM\Id()
@@ -22,21 +22,14 @@ class Service
     private $title;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="text")
      */
     private $discription;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="date")
      */
-    private $price;
-
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $image;
-
+    private $date;
 
     public function getId(): ?int
     {
@@ -67,28 +60,15 @@ class Service
         return $this;
     }
 
-    public function getPrice(): ?int
+    public function getDate(): ?\DateTimeInterface
     {
-        return $this->price;
+        return $this->date;
     }
 
-    public function setPrice(int $price): self
+    public function setDate(\DateTimeInterface $date): self
     {
-        $this->price = $price;
+        $this->date = $date;
 
         return $this;
     }
-
-    public function getImage(): ?string
-    {
-        return $this->image;
-    }
-
-    public function setImage(string $image): self
-    {
-        $this->image = $image;
-
-        return $this;
-    }
-
 }
