@@ -22,10 +22,29 @@ class CatalogController extends AbstractController
             'services'=>$serv
         ]);
     }
-    public function for_catalog()
+
+    /**
+     * @Route("/catalog/generator/{id}", name="catalog_by_id")
+     */
+    public function getGeneratorFromCatalog(GeneratorRepository $generator, ServiceRepository $service)
     {
-        //from_base
+        $gen = $generator->find($id);
+        return $this->render('catalog/index.html.twig', [
 
+            'title' => 'каталог',
+            'generator' =>$gen,
+        ]);
     }
-
+    /**
+     * @Route("/catalog/service/{id}", name="service by_id")
+     */
+    public function getServiceFromCatalog(GeneratorRepository $generator, ServiceRepository $service)
+    {
+        $serv = $service->findid();
+        return $this->render('catalog/index.html.twig', [
+            'controller_name' => 'CatalogController',
+            'title' => 'каталог',
+            'service'=>$serv
+        ]);
+    }
 }
