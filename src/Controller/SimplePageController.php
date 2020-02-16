@@ -22,6 +22,33 @@ class SimplePageController extends AbstractController
     public function contacts()
     {
         return $this->render('simple_page/contacts.html.twig', [
+
+        ]);
+    }
+    /**
+     * @Route("/delivery", name="delivery")
+     */
+    public function delivery()
+    {
+        return $this->render('simple_page/delivery.html.twig', [
+
+        ]);
+    }
+    /**
+     * @Route("/faq", name="faq")
+     */
+    public function faq()
+    {
+        return $this->render('simple_page/faq.html.twig', [
+
+        ]);
+    }
+    /**
+     * @Route("/carier", name="carier")
+     */
+    public function carier()
+    {
+        return $this->render('simple_page/carier.html.twig', [
             'controller_name' => 'SimplePageController',
         ]);
     }

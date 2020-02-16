@@ -36,3 +36,11 @@ easy_admin:
          - 'title'
          - 'discription'
          - 'price'
+
+    News:
+      class: App\Entity\News
+      list:
+       fields:
+         - 'title'
+         - 'discription'
+         - 'date'

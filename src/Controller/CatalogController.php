@@ -5,7 +5,8 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Repository\GeneratorRepository;
-use App\Repository\ServiceRepository;
+use App\Repository\ServiceRepository
+;
 class CatalogController extends AbstractController
 {
     /**
@@ -16,7 +17,6 @@ class CatalogController extends AbstractController
         $gen = $generator->findAll();
         $serv = $service->findAll();
         return $this->render('catalog/index.html.twig', [
-            'controller_name' => 'CatalogController',
             'title' => 'каталог',
             'generators' =>$gen,
             'services'=>$serv
@@ -24,9 +24,9 @@ class CatalogController extends AbstractController
     }
 
     /**
-     * @Route("/catalog/generator/{id}", name="catalog_by_id")
+     * @Route("/catalog/generators/{id}", name="generator_by_id")
      */
-    public function getGeneratorFromCatalog(GeneratorRepository $generator, ServiceRepository $service)
+    public function getGeneratorFromCatalog(GeneratorRepository $generator, $id)
     {
         $gen = $generator->find($id);
         return $this->render('catalog/index.html.twig', [
@@ -36,9 +36,9 @@ class CatalogController extends AbstractController
         ]);
     }
     /**
-     * @Route("/catalog/service/{id}", name="service by_id")
+     * @Route("/catalog/services/{id}", name="service by_id")
      */
-    public function getServiceFromCatalog(GeneratorRepository $generator, ServiceRepository $service)
+    public function getServiceFromCatalog(GeneratorRepository $generator, $id)
     {
         $serv = $service->findid();
         return $this->render('catalog/index.html.twig', [
