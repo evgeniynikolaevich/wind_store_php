@@ -17,10 +17,8 @@ class MainController extends AbstractController
     public  function showAction(GeneratorRepository $repository, SessionInterface $session, Request $request)
 
     {
-          $generators = $repository->findAll();
-
-        return $this->render('main/main.html.twig',['generators'=> array_slice($generators, 0 ,3),"title" =>'главная',
-
+        $generators = $repository->findAll();
+         return $this->render('main/main.html.twig',['generators'=> array_slice($generators, 0 ,3),"title" =>'главная',
          'main_title' => 'популярное']);
     }
 }
