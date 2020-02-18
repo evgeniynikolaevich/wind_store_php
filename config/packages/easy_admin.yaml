@@ -9,12 +9,17 @@ easy_admin:
          - 'power'
          - 'voltage'
          - 'type_generator'
+         - 'article'
+         - 'price'
      form:
        fields:
          - "title"
          - "power"
          - "type_generator"
-
+         - "image"
+         - "weight"
+         - 'article'
+         - 'price'
     Projects:
      class:  App\Entity\Projects
      list:

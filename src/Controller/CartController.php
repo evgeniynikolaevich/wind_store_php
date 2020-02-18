@@ -16,19 +16,6 @@ class CartController extends AbstractController
 {
 
 
-    private function category_selector($category){
-      if($category == "services")
-      {
-
-
-      }
-      if($category == "generators")
-      {
-
-
-      }
-
-    }
 
     /**
      * @Route("/cart", name="cart")

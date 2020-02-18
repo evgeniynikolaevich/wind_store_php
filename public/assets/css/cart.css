@@ -1,0 +1,68 @@
+.cart-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.item-in-cart{
+  display: flex;
+  flex-direction: row;
+  background-color:
+  aquamarine;
+  height: 140px;
+  width: 100%;
+}
+.item-image img{
+  height: 100px;
+  width: 140px;
+}
+.item-image{
+  height: inherit;
+}
+
+.item-quan{
+  display: flex;
+  width: 15%;
+
+}
+.plus-munis-quan{
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+}
+.item-title{
+  width: 25%;
+}
+.item-article{
+  width: 20%;
+}
+.item-weight{
+  width: 15%;
+}
+.item-price{
+  width: 10%;
+}
+.upper-title,
+.title-cart {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 43px;
+
+  /* or 269% */
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+
+  /* black light */
+  color: #3A3939;
+}
+.title-cart{
+  text-transform: none;
+}
+
+.for-cart-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
