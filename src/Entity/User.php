@@ -96,22 +96,6 @@ class User implements UserInterface
 
         return $this;
     }
-    /*
-    public function getItemFromSession(string $item)
-    {
-        return $value = $this->session->get($item, 'none');
-    }
-    public function getAllFromSession()
-    {
-    }
-
-    public function setIntoSession(Generator $generator)
-    {
-        $this->session->set($generator);
-
-    }
-
-    */
 
 
 
