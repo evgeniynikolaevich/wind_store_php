@@ -2,9 +2,63 @@
 {% block title %}{{title}}{% endblock %}
             {% block body %}
             {% if in_cart|length !=0 %}
+            <div class="cart-container">
             {%for generator in in_cart%}
-            {{generator.title}}
+              <div class="item-in-cart">
+                <div class="item-image for-cart-section">
+                  <img src="{{generator.image}}">
+                </div>
+                <div class="item-title for-cart-section">
+                  <div class="upper-title">
+                    <p>Название</p>
+                  </div>
+                  <div class="title-cart">
+                      {{generator.title}}
+                  </div>
+                </div>
+                <div class="item-article for-cart-section">
+                  <div class="upper-title">
+                    <p>Артикул</p>
+                  </div>
+                  <div class="title-cart">
+                      {{generator.article}}
+                  </div>
+                </div>
+                <div class="item-weight for-cart-section ">
+                  <div class="upper-title">
+                    <p>Вес</p>
+                  </div>
+                  <div class="title-cart">
+                      {{generator.weight}}
+                  </div>
+                </div>
+                <div class="item-quan for-cart-section">
+                  <div class="upper-title">
+                    <p>Количество</p>
+                  </div>
+                  <div class="plus-munis-quan">
+                    <div class="plus-item">
+                      <a href="add_to_cart/{{generator.id}}">+</a>
+                    </div>
+                    <div class="itogo">
+                      <p>0</p>
+                    </div>
+                    <div class="remove-item">
+                      <a href="remove_from_cart/{{generator.id}}">-</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-price for-cart-section">
+                  <div class="upper-title">
+                    <p>Цена</p>
+                  </div>
+                  <div class="title-cart">
+                      {{generator.price}}
+                  </div>
+                </div>
+              </div>
             {% endfor %}
+            </div>
             {% else %}
             корзина пуста
             {% endif %}
