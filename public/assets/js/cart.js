@@ -1,3 +1,4 @@
+
 function calculates_prices(all){
 let itogo = document.getElementsByClassName("intogo")[0];
   // price each item
@@ -31,16 +32,6 @@ function update_elements_counters(all,counters){
 }
 
 function remove_duplicates(all, counters){
-  /*for(let i = 0;i<all.length;i++){
-  console.log(counters);
-  { if(all[i].childNodes[3].children[1].innerText in counters )
-    //prosti menia mama#2
-    while(counters[all[i].childNodes[3].children[1].innerText] !== 1)
-    {
-      console.log('here')
-      all[i].remove();
-      counters[all[i].childNodes[3].children[1].innerText]-= 1;
-    } */
     for(let i = 0;i<all.length;i++){
     console.log(counters);
     { if(all[i].childNodes[3].children[1].innerText in counters )
@@ -48,8 +39,6 @@ function remove_duplicates(all, counters){
       //prosti menia mama#2
       while(counters[all[i].childNodes[3].children[1].innerText] > 1)
       {
-
-
         counters[all[i].childNodes[3].children[1].innerText]-= 1;
         all[i].remove();
         console.log((counters));
@@ -59,7 +48,6 @@ function remove_duplicates(all, counters){
 
 }
 }
-
 function make_cart_clean(){
   let all = document.getElementsByClassName("item-in-cart");
   //procedure...
@@ -67,8 +55,5 @@ function make_cart_clean(){
   let quantity = find_quantity_each_elements(all);
   let updated_quantity_elements = update_elements_counters(all, quantity);
   remove_duplicates(all, quantity);
-
-
-
 }
 make_cart_clean();

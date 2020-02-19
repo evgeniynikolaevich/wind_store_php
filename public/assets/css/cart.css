@@ -6,8 +6,6 @@
 .item-in-cart{
   display: flex;
   flex-direction: row;
-  background-color:
-  aquamarine;
   height: 140px;
   width: 100%;
   margin: 5px;
@@ -80,3 +78,36 @@
   font-weight: 600;
 
 }
+.all-weights{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  width: 95%;
+  font-size: 10px;
+
+}
+.empty-cart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-cart{
+  height: 500px;
+  background:blue;
+  flex-direction: row;
+  display: flex;
+
+}
+.left-side-form{
+  width: 50%;
+  background-color:
+  yellow;
+  height: 100%;
+}
+.rigth-side-form{
+  width: 50%;
+  background-color:
+      red;
+      height: 100%;
+  }

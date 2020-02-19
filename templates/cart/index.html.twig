@@ -58,17 +58,45 @@
                 </div>
               </div>
             {% endfor %}
+            <div class="all-weights">
+              <div class="title-cart ">
+                Общий вес:
+              </div>
+              <div class="title-cart title-itog">
+                  <p class='intogo-weight'>0</p>
+              </div>
+            </div>
+
             <div class="all-prices">
               <div class="title-cart ">
                 Итого:
               </div>
               <div class="title-cart title-itog">
-                  <p class='intogo'>1000000000000</p>
+                  <p class='intogo'>0</p>
               </div>
             </div>
             </div>
+            <div class="form-cart">
+              <div class="left-side-form">
+                <input type="radio" id="contactChoice1"
+               name="contact" value="email">
+              <label for="contactChoice1">Email</label>
+
+              <input type="radio" id="contactChoice2"
+               name="contact" value="phone">
+              <label for="contactChoice2">Phone</label>
+
+              <input type="radio" id="contactChoice3"
+               name="contact" value="mail">
+              <label for="contactChoice3">Mail</label>
+              </div>
+              <div class="rigth-side-form">
+              </div>
+            </div>
             {% else %}
-            корзина пуста
+            <div class="empty-cart title-cart">
+              <p>корзина пуста</p>
+            </div>
             {% endif %}
            {% endblock %}
         {% block javascripts %}
