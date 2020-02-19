@@ -41,7 +41,7 @@
                       <a href="add_to_cart/{{generator.id}}">+</a>
                     </div>
                     <div class="itogo">
-                      <p>0</p>
+                      <p class="count-value">0</p>
                     </div>
                     <div class="remove-item">
                       <a href="remove_from_cart/{{generator.id}}">-</a>
@@ -58,8 +58,19 @@
                 </div>
               </div>
             {% endfor %}
+            <div class="all-prices">
+              <div class="title-cart ">
+                Итого:
+              </div>
+              <div class="title-cart title-itog">
+                  <p class='intogo'>1000000000000</p>
+              </div>
+            </div>
             </div>
             {% else %}
             корзина пуста
             {% endif %}
            {% endblock %}
+        {% block javascripts %}
+        <script type="text/javascript" src="assets/js/cart.js"></script>
+        {% endblock %}
