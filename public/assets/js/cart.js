@@ -31,7 +31,7 @@ function update_elements_counters(all,counters){
 }
 
 function remove_duplicates(all, counters){
-  for(let i = 0;i<all.length;i++){
+  /*for(let i = 0;i<all.length;i++){
   console.log(counters);
   { if(all[i].childNodes[3].children[1].innerText in counters )
     //prosti menia mama#2
@@ -40,7 +40,20 @@ function remove_duplicates(all, counters){
       console.log('here')
       all[i].remove();
       counters[all[i].childNodes[3].children[1].innerText]-= 1;
-    }
+    } */
+    for(let i = 0;i<all.length;i++){
+    console.log(counters);
+    { if(all[i].childNodes[3].children[1].innerText in counters )
+      console.log(all[i].childNodes[3].children[1].innerText)
+      //prosti menia mama#2
+      while(counters[all[i].childNodes[3].children[1].innerText] > 1)
+      {
+
+
+        counters[all[i].childNodes[3].children[1].innerText]-= 1;
+        all[i].remove();
+        console.log((counters));
+      }
 }
 
 
