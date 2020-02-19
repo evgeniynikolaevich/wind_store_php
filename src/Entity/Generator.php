@@ -72,6 +72,7 @@ class Generator
     private function generate_article()
     {
        return rand(1000,10000);
+
     }
 
     public function getId(): ?int

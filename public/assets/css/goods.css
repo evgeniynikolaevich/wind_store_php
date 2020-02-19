@@ -8,16 +8,19 @@
    font-weight: 600;
    line-height: 36px;
 
+
 /* or 140% */
 text-transform: uppercase;
 
 /* black light */
 color: #3A3939;
 }
+<
 .bottom{
 
   margin-bottom: 50px;
 }
+
 .more-about-generator{
 
 display: flex;
