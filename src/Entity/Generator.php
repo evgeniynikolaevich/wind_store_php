@@ -48,9 +48,31 @@ class Generator
      */
     private $projects;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $article = null;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $weight ;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $price = null;
+
     public function __construct()
     {
         $this->projects = new ArrayCollection();
+        $this->article = $this->generate_article();
+    }
+
+    private function generate_article()
+    {
+       return rand(1000,10000);
+
     }
 
     public function getId(): ?int
@@ -145,4 +167,41 @@ class Generator
 
         return $this;
     }
+
+    public function getArticle(): ?int
+    {
+        return $this->article;
+    }
+
+    public function setArticle(int $article): self
+    {
+        $this->article = $article;
+
+        return $this;
+    }
+
+    public function getWeight(): ?int
+    {
+        return $this->weight;
+    }
+
+    public function setWeight(int $weight): self
+    {
+        $this->weight = $weight;
+
+        return $this;
+    }
+
+    public function getPrice(): ?int
+    {
+        return $this->price;
+    }
+
+    public function setPrice(int $price): self
+    {
+        $this->price = $price;
+
+        return $this;
+    }
+
 }

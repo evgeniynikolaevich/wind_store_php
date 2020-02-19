@@ -9,6 +9,7 @@
             <link rel="stylesheet" href="assets/css/base.css">
             <link rel="stylesheet" href="assets/css/main.css">
             <link rel="stylesheet" href="assets/css/goods.css">
+            <link rel="stylesheet" href="assets/css/cart.css">
         {% endblock %}
     </head>
     <body>
@@ -72,6 +73,9 @@
                     <nav class="main-nav">
                         <ul class="main-nav-list">
                             <li>
+                                <a href="{{ path('main') }}">Главная</a>
+                            </li>
+                            <li>
                                 <a href="{{ path('catalog') }}">Продукты и услуги</a>
                             </li>
                             <li>
@@ -84,11 +88,6 @@
                                 <a href="{{ path('delivery') }}">Доставка</a>
                             </li>
                             <li>
-
-                                <a href="{{ path('faq') }}">Часто Задаваемые Вопросы</a>
-
-                            </li>
-                            <li>
                                 <a href="{{ path('contacts') }}">Контакты</a>
                             </li>
                         </ul>
@@ -97,7 +96,6 @@
             </div>
            {% endblock %}
         </div>
-
         {% block reklama %}
         {% endblock %}
         {% block main_title %}
@@ -108,7 +106,6 @@
             {% block generator%}
             {% endblock %}
             {% endblock%}
-
           </div>
         </div>
         {% block javascripts %}{% endblock %}
