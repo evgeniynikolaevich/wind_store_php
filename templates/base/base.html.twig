@@ -47,18 +47,13 @@
                   </div>
                     <div class="right-half-header-logos">
                         <div class="user">
-                          <a href="#">
+                          <a href="/login">
                             <img src="assets/img/base/user.png" alt="">
                           </a>
                         </div>
                         <div class="shopping">
                           <a href="{{ path('cart')}}">
                             <img src="assets/img/base/shopping-cart.png" alt="">
-                          </a>
-                        </div>
-                        <div class="compare">
-                          <a href="#">
-                            <img src="assets/img/base/balance.png" alt="">
                           </a>
                         </div>
                         <div class="search">
@@ -108,58 +103,59 @@
             {% endblock%}
           </div>
         </div>
-        {% block javascripts %}{% endblock %}
-      {% block footer %}
+        {% block footer %}
 
-      <div class="bottom-section">
-        <div class="footer-container">
-          <div class="left-side-footer">
-            <div class="left-side-left-half-footer">
-              <a href="#">
-                <img src="assets/img/base/footer-logo.png" alt="">
-              </a>
-              <div class="main-logo-right">
-                  <p class="main-logo-place  left-side-footer-contacts">
-                      Caнкт-Петербург
-                  </p>
-                  <p class="main-logo-telephone left-side-footer-contacts">
-                       +7 (812) 114-31-11
-                  </p>
+        <div class="bottom-section">
+          <div class="footer-container">
+            <div class="left-side-footer">
+              <div class="left-side-left-half-footer">
+                <a href="#">
+                  <img src="assets/img/base/footer-logo.png" alt="">
+                </a>
+                <div class="main-logo-right">
+                    <p class="main-logo-place  left-side-footer-contacts">
+                        Caнкт-Петербург
+                    </p>
+                    <p class="main-logo-telephone left-side-footer-contacts">
+                         +7 (812) 114-31-11
+                    </p>
+                </div>
+              </div>
+              <div class="left-side-right-half-footer">
               </div>
             </div>
-            <div class="left-side-right-half-footer">
+            <div class="center-side-footer">
+              <a href="{{ path('catalog') }}">Ветрогенераторы</a>
+              <a href="{{ path('catalog') }}">Обслуживание</a>
+              <a href="{{ path('catalog') }}">О нас</a>
+              <a href="{{ path('catalog') }}">Рекомендации</a>
+              <a href="{{ path('catalog') }}">Новости</a>
+              <a href="{{ path('catalog') }}">Карьера</a>
+              <a href="{{ path('catalog') }}">Проекты</a>
+              <a href="{{ path('catalog') }}">Доставка</a>
+              <a href="{{ path('catalog') }}">Контакты</a>
+              <a href="{{ path('catalog') }}">Онлайн-калькулятор</a>
+            </div>
+            <div class="right-side-footer">
+                <div class="social">
+                    <div class="in-social space-social">
+                      <p>Мы в соцсетях</p>
+                    </div>
+                    <div class="social-link space-social">
+                      <a class="facebook" href="https://www.facebook.com/"></a>
+                      <a class="twitter" href="https://twitter.com/"></a>
+                      <a class="youtube" href="https://www.youtube.com/"></a>
+                      <a class="instagram" href="https://www.instagram.com/"></a>
+                    </div>
+                  <a class="contact-us space-social" href="/">Связаться с нами</a>
+               </div>
             </div>
           </div>
-          <div class="center-side-footer">
-            <a href="{{ path('catalog') }}">Ветрогенераторы</a>
-            <a href="{{ path('catalog') }}">Обслуживание</a>
-            <a href="{{ path('catalog') }}">О нас</a>
-            <a href="{{ path('catalog') }}">Рекомендации</a>
-            <a href="{{ path('catalog') }}">Новости</a>
-            <a href="{{ path('catalog') }}">Карьера</a>
-            <a href="{{ path('catalog') }}">Проекты</a>
-            <a href="{{ path('catalog') }}">Доставка</a>
-            <a href="{{ path('catalog') }}">Контакты</a>
-            <a href="{{ path('catalog') }}">Онлайн-калькулятор</a>
-          </div>
-          <div class="right-side-footer">
-              <div class="social">
-                  <div class="in-social space-social">
-                    <p>Мы в соцсетях</p>
-                  </div>
-                  <div class="social-link space-social">
-                    <a class="facebook" href="https://www.facebook.com/"></a>
-                    <a class="twitter" href="https://twitter.com/"></a>
-                    <a class="youtube" href="https://www.youtube.com/"></a>
-                    <a class="instagram" href="https://www.instagram.com/"></a>
-                  </div>
-                <a class="contact-us space-social" href="/">Связаться с нами</a>
-             </div>
-          </div>
         </div>
-      </div>
 
-      {% endblock %}
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+
       </div>
     </body>
 </html>

@@ -15,7 +15,6 @@ use App\Repository\GeneratorRepository;
 
 class CartController extends AbstractController
 {
-
     /**
      * @Route("/cart", name="cart")
      */
@@ -31,7 +30,6 @@ class CartController extends AbstractController
         }
         }
         return $this->render('cart/index.html.twig', [
-            'controller_name' => 'CartController',
             'title' =>'Корзина',
             'in_cart'=> $generators_is_cart
         ]);
@@ -65,5 +63,19 @@ class CartController extends AbstractController
        $sessionCart->set('cart', $cart);
       return $this->redirectToRoute('cart');
     }
+
+    /**
+     * @Route("/cart/suc")
+     */
+    public function success(Request $request)
+      {
+        return $this->render('cart/success.html.twig', [
+            'title' =>'Успешная покупка',
+            'info'=> 'Ваша информация передана специалистам.С вами свяжутся уточнения предоставленной вами информации'
+        ]);
+    }
+
+
+
 
 }

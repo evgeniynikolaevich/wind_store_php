@@ -1,22 +1,25 @@
 .back-generator{
-  width: 410px;
-   height: 300px;
-   display: flex;
-   align-items: end;
-   font-family: Montserrat;
-   font-style: normal;
-   font-weight: 600;
-   line-height: 36px;
-
-/* or 140% */
-text-transform: uppercase;
-
-/* black light */
-color: #3A3939;
+  width: 50%;
+  height: 300px;
+  display: flex;
+  align-items: end;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  text-transform: uppercase;
+  color:
+  #3A3939;
 }
-.bottom{
+.bottom-gen{
 
   margin-bottom: 50px;
+}
+.middle-gen{
+
+}
+.top-gen{
+  display: flex;
 }
 .more-about-generator{
 
@@ -29,14 +32,22 @@ flex-direction: column;
 	align-content: flex-start;
 	align-items: self-start;
 }
-.top{
-  display: flex;
-}
-.top{
-  display: flex;
-}
-}
-.additional-info p{
-  margin-left: 50px;
 
+.parametr{
+  display: flex;
 }
+.parametr-name{
+  margin: 0px 20px;
+}
+.space-beetween{
+  margin-left: 50px;
+}
+input.about-generator{
+  border: none;
+  background: inherit;
+}
+
+.additional-info p{
+  /*margin-left: 50px;*/
+}
+.

@@ -1,29 +1,40 @@
-<form class="more-about-generator" action="/add_to_cart/{{generator.id}}" method="post">
-  <div class="back-generator" style="background: url({{generator.image}});">
-      <div class="left-side-good">
-        <div class="bottom">
-          <p class="current_buy" >{{generator.title}}</p>
-          <p>{{generator.power}} Квт</p>
-        </div>
-      </div>
-    </div>
-      <div class="additional-info">
-        <div class="top">
-          <div class="voltage">
-            <p>Напряжение </p>
-          </div>
-          <div class="parametr-name">
-              <p> {{generator.voltage}}</p>
+<div class="gen-elements">
+  <form class="more-about-generator" action="/add_to_cart/{{generator.id}}" method="post">
+    <div class="back-generator" style="background: url({{generator.image}});">
+        <div class="left-side-good">
+          <div class="bottom">
+            <p class="current_buy" >{{generator.title}}</p>
+            <p>{{generator.power}} Квт</p>
           </div>
         </div>
-      <div class="bottom">
-        <div class="type-generator">
-          <p>Тип генератора </p>
-        </div>
-        <div class="parametr-name">
-          <p> {{generator.TypeGenerator}}</p>
-        </div>
       </div>
-      </div>
-        <input type="submit" class="about-generator" value="купить">
-</form>
+        <div class="additional-info">
+          <div class="top-gen">
+            <div class="parametr space-beetween">
+              <p>Напряжение </p>
+            </div>
+            <div class="parametr-name">
+                <p> {{generator.voltage}}</p>
+            </div>
+          </div>
+          <div class="middle-gen">
+            <div class="parametr space-beetween">
+              Мощность генератора
+              <div class="parametr-name">
+                {{generator.power}}
+              </div>
+            </div>
+          </div>
+          <div class="bottom-gen">
+            <div class="parametr space-beetween">
+              Тип генератора
+              <div class="parametr-name">
+                {{generator.TypeGenerator}}
+              </div>
+            </div>
+          </div>
+          <input type="submit" class="about-generator space-beetween" value="купить">
+  </form>
+</div>
+{# mistic place#}
+</div>
