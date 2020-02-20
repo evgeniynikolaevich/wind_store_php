@@ -1,7 +1,9 @@
 {% extends "base/base.html.twig"%}
 {% block title %}{{title}}{% endblock %}
             {% block body %}
+            <p class="part-title">eurus/корзина</p>
             {% if in_cart|length !=0 %}
+
             <div class="cart-container">
             {%for generator in in_cart%}
               <div class="item-in-cart">
@@ -77,21 +79,64 @@
             </div>
             </div>
             <div class="form-cart">
-              <div class="left-side-form">
-                <input type="radio" id="contactChoice1"
-               name="contact" value="email">
-              <label for="contactChoice1">Email</label>
+              <p class="part-title ">выберите способ доставки</p>
+              <form class="right-side-buy" action="index.html" method="post">
+                <div class="left-side-form">
+                  <div class="choice">
+                    <input type="radio" id="contactChoice"name="contact" value="self-ride">самовывоз (бесплатно)
+                    <div class="text-choice">
+                      <p>Удобный, бесплатный и быстрый способ получения заказа. Адрес магазина: г. Санкт-Петербург, ул. Салова 45 литера Ж</p>
+                    </div>
+                  </div>
+                  <div class="choice">
+                    <input type="radio" id="contactChoice"name="contact" value="delivery">курьерская доставка по санкт-петербургу (бесплатно)
+                    <div class="text-choice">
+                      <div class="ahtung">
+                      Доступно только для Санкт-Петербурга Максимальный вес: 300 к
+                      </div>
+                      <p>
+                          Курьерская доставка осуществляется на следующий день после оформления заказа, если товар есть в наличии. Курьерская доставка осуществляется в пределах СПб  с 10.00 до 21.00. Заказ на сумму свыше 80000 рублей доставляется бесплатно.
+                          Стоимость бесплатной доставки раcсчитывается от суммы заказа с учтенной скидкой. В случае если сумма заказа после применения скидки менее 80000 рублей, осуществляется платная доставка.
+                          При сумме заказа менее 80000 рублей стоимость доставки составляет от 500 рублей
+                      </p>
+                    </div>
+                  </div>
+                  <div class="choice">
+                    <input type="radio" id="contactChoice"name="contact" value="terminal">Доставка до терминала транспортной компании (договорная)
+                    <div class="text-choice">
+                      <div class="ahtung">
+                        Оплата доставки до терминала транспортной компании в Санкт-Петербурге.
+                      </div>
+                         <p>
+                          Оплата стоимости доставки от терминала транспортной компании в Санкт-Петербурге до адреса доставки оплачивается непосредственно в транспортной компании при получении заказа. Выбор транспортной кампании и стоимость мы обсудим с Вами в процессе оформления заказа.</p>
 
-              <input type="radio" id="contactChoice2"
-               name="contact" value="phone">
-              <label for="contactChoice2">Phone</label>
-
-              <input type="radio" id="contactChoice3"
-               name="contact" value="mail">
-              <label for="contactChoice3">Mail</label>
-              </div>
-              <div class="rigth-side-form">
-              </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rigth-side-form">
+                  <div class="input-containers">
+                    <p class="part-title">Данные получателя:</p>
+                    <div class="input-customer">
+                        <p>Имя, фамилия</p>
+                        <input type="text" name="fio" value="">
+                    </div>
+                    <div class="input-customer">
+                        <p>Email</p>
+                        <input type="text" name="email" value="">
+                    </div>
+                    <div class="input-customer">
+                        <p>телефон</p>
+                        <input type="text" name="phone" value="">
+                    </div>
+                    <div class="comment-customer">
+                        <p>коментарий</p>
+                        <input type="text" name="comment" value="" style="height:100px">
+                    </div>
+                    <div class="buy-push">
+                      <button class="buy" type="submit" name="button">Оформить Заказ</button>
+                    </div>
+                </div>
+              </form>
             </div>
             {% else %}
             <div class="empty-cart title-cart">
