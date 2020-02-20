@@ -20,6 +20,7 @@ easy_admin:
          - "weight"
          - 'article'
          - 'price'
+
     Projects:
      class:  App\Entity\Projects
      list:

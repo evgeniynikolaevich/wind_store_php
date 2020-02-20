@@ -78,6 +78,7 @@
   font-weight: 600;
 
 }
+
 .all-weights{
   display: flex;
   flex-direction: column;
@@ -116,8 +117,8 @@ justify-content: center;
   height: 70%;
   margin: 35px 75px 0 98px;
   background: #FFFFFF;
-border: 1px solid rgba(0, 0, 0, 0.1);
-box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
   }
 form.right-side-buy{
     display: flex;
@@ -126,19 +127,19 @@ form.right-side-buy{
 .part-title,
 .choice
 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
 
 /* identical to box height, or 187% */
   letter-spacing: -0.025em;
   text-transform: uppercase;
 }
 .part-title{
-margin-bottom: 20px;
-font-size: 16px;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 .text-choice p{
   font-weight: 300;
@@ -166,8 +167,6 @@ margin: 10px;
   flex-direction: column;
   align-items: center;
 }
-
-
 .input-customer, .comment-customer{
   font-family: Montserrat;
   font-style: normal;
@@ -204,4 +203,4 @@ button.buy{
   justify-content: center;
   margin: 30px;
 }
-.
+
