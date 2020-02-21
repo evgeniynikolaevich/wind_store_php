@@ -5,7 +5,8 @@ namespace App\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-
+use Symfony\Component\HttpFoundation\Request;
+use App\Repository\GeneratorRepository;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ProjectsRepository")
  */
@@ -89,27 +90,27 @@ class Projects
         return $this->generators;
     }
 
-    public function addGenerator(Generator $generator): self
-    {
-        if (!$this->generators->contains($generator)) {
-            $this->generators[] = $generator;
+    public function addGenerator(Generator $generator, Request $request ,GeneratorRepository $gen_rep):this
+      {  if (!$this->generators->contains($generator)){
+
+            $this->generators[] = $generator->getId();
             $generator->setProjects($this);
         }
 
         return $this;
     }
 
-    public function removeGenerator(Generator $generator): self
+    public function removeGenerator(Generator $generator)
     {
         if ($this->generators->contains($generator)) {
-            $this->generators->removeElement($generator);
+            $this->generators->removeElement($generator->id);
         }
 
         return $this;
     }
     public function __toString()
     {
-        return (string) $this->generator;
+        return strval( $this->getPlace() );
     }
 
 

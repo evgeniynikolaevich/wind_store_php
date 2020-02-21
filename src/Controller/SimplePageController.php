@@ -52,5 +52,13 @@ class SimplePageController extends AbstractController
             'controller_name' => 'SimplePageController',
         ]);
     }
-
+      /**
+     * @Route("/test")
+     */
+    public function test()
+    {
+        return $this->render('admin/gen2.html.twig', [
+            'controller_name' => 'SimplePageController',
+        ]);
+    }
 }

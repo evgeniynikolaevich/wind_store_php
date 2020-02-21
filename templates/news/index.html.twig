@@ -1,0 +1,9 @@
+{% extends "base/base.html.twig"%}
+
+{% block title %}Welcome!{% endblock %}
+  {% block body %}
+    {%for news in all_news%}
+        {% include '/news/news.html.twig' %}
+    {% endfor%}
+  {% endblock %}
+{% block javascripts %}{% endblock %}

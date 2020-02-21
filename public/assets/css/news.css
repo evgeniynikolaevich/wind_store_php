@@ -1,0 +1,4 @@
+.more-about-news{
+  display: flex;
+  flex-direction: column;
+}

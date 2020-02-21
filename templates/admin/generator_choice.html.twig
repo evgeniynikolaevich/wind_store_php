@@ -1,6 +1,0 @@
-
-{% set colors = field_options.label_colors|default(['primary']) %}
-
-{% for power in value %}
-    <span class="label label-{{ cycle(choice, loop.index) }}">{{ power }}</span>
-{% endfor %}

@@ -58,20 +58,20 @@ opacity: 0.9;
   margin-top: 25px;
 }
 
-.generators {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  align-content: flex-end;
+
+.main-title-block p{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
-.generator-for-sale{
-  display: flex;
-  flex-direction: column;
+.main-title-news p{
+
+font-size: 13px;
 }
+
 
 .back-generator{
 
@@ -80,7 +80,6 @@ opacity: 0.9;
   margin: 50px;
 }
 /* how make button from a */
-
 .all-in-catalog a{
   border:
   #CE4F4F 2px solid;
@@ -96,6 +95,16 @@ opacity: 0.9;
   #FFFFFF;
   padding: 20px;
   display: block;
-  margin-top: 75px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+
+}
+.all-in-catalog{
+ display: flex;
+ align-content: center;
+ justify-content: center;
+}
+.news{
+  margin-top: 25px
 
 }

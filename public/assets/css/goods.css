@@ -1,5 +1,8 @@
+
+/* file discribe styles for services and generators */
+.back-service,
 .back-generator{
-  width: 50%;
+  width: 100%;
   height: 300px;
   display: flex;
   align-items: end;
@@ -11,6 +14,23 @@
   color:
   #3A3939;
 }
+.back-service{
+    display: flex;
+    align-content: center;
+    align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column-reverse;
+  font-family: Montserrat;
+font-style: inherit;
+font-weight: 588;
+line-height: 26px;
+text-transform: uppercase;
+color:
+#3A3939;
+font-size: 16px;
+}
+
 .bottom-gen{
 
   margin-bottom: 50px;
@@ -21,23 +41,41 @@
 .top-gen{
   display: flex;
 }
-.more-about-generator{
 
-display: flex;
-flex-direction: column;
-}
 .additional-info{
-	display: flex;
-	flex-direction: column;
-	align-content: flex-start;
-	align-items: self-start;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+
+  margin-top: 25px;
+  margin-bottom: 60px;
 }
 
 .parametr{
   display: flex;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  /* black light */
+  color: #3A3939;
 }
 .parametr-name{
   margin: 0px 20px;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+text-transform: none;
+
+/* identical to box height */
+
+/* black light */
+color: #3A3939;
 }
 .space-beetween{
   margin-left: 50px;
@@ -50,4 +88,7 @@ input.about-generator{
 .additional-info p{
   /*margin-left: 50px;*/
 }
-.
+p.current_buy{
+  height: 50%;
+  text-align: center;
+}

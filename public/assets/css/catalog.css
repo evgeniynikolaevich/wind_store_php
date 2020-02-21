@@ -1,0 +1,53 @@
+.title-catalog p{
+  margin-bottom: 20px;
+  margin-bottom: 70px;
+}
+.generators {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-content: flex-end;
+  margin: 30px;
+}
+.generator-for-sale{
+  display: flex;
+  flex-direction: column;
+}
+.service{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.more-about-generator{
+
+display: flex;
+flex-direction: column;
+}
+.more-about-service{
+display: flex;
+flex-direction: column;
+width: 200px;
+
+}
+.service-logo{
+  height: 100px;
+}
+button.button-info-about-services{
+  border: none;
+  background-color:inherit;
+  margin-top: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: 45px;
+  font-size: 18px;
+}
+input.about-generator{
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: 45px;
+  font-size: 14px;
+}
