@@ -1,4 +1,14 @@
 {% extends "base/base.html.twig"%}
 {% block body%}
-
+  <div class="service-block">
+    <div class="service-title">
+      {{service.title}}
+    </div>
+    <div class="service-discript">
+      {{service.discription}}
+    </div>
+    <div class="price">
+      {{service.price}}
+    </div>
+  </div>
 {% endblock %}

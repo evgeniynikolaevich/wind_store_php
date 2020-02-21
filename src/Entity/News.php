@@ -62,7 +62,9 @@ class News
 
     public function getDate(): ?\DateTimeInterface
     {
-        return $this->date;
+
+
+        return strval($this->date);
     }
 
     public function setDate(\DateTimeInterface $date): self

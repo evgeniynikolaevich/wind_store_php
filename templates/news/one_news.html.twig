@@ -1,7 +1,15 @@
 {% extends "base/base.html.twig"%}
 
-{% block title %}Welcome!{% endblock %}
   {% block body %}
-<p>{{news.title}}</p>
+  <div class="news-block">
+    <div class="title-news">
+      <h1>{{news.title}}</h1>
+    </div>
+    <div class="news-full-discr">
+      <p>{{news.discription}}</p>
+    </div>
+  </div>
+
+
   {% endblock %}
 {% block javascripts %}{% endblock %}

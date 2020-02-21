@@ -22,7 +22,7 @@ class MainController extends AbstractController
         $news = $news_repository->findAll();
          return $this->render('main/main.html.twig',
          ['generators'=> array_slice($generators, 0 ,4),
-         'all_news'=> array_slice($news, 0 ,4),
+         'all_news'=> array_slice($news, 0 ,3),
          "title" =>'главная',
          'main_title' => 'популярное']);
     }
