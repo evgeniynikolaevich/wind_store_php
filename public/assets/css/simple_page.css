@@ -7,7 +7,7 @@
   text-transform: uppercase;
   margin: 30px;
 }
-.delivery-container, .contacts-container{
+.delivery-container, .contacts-container, .about-container{
 margin: 50px 100px 0 100px;
 display: flex;
 flex-direction: column;
@@ -39,7 +39,8 @@ span{
 
   /* black light */
   color: #3A3939;
-  margin: 5px;
+  margin: 10px;
+  margin-left: 5px;
 }
 .bucklet{
   margin:20px;
@@ -51,6 +52,6 @@ span{
   text-align: center;
   margin:10px
 }
-.adress{
+.center{
   text-align: center;
 }
