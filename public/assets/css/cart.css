@@ -204,4 +204,9 @@ button.buy{
   justify-content: center;
   margin: 30px;
 }
-.
+.input-customer input{
+border: solid 1px;
+}
+.comment-customer input{
+  border: solid 1px;
+}
