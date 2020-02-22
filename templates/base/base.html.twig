@@ -6,14 +6,14 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         {% block stylesheets %}
-            <link rel="stylesheet" href="assets/css/base.css">
-            <link rel="stylesheet" href="assets/css/main.css">
-            <link rel="stylesheet" href="assets/css/goods.css">
-            <link rel="stylesheet" href="assets/css/cart.css">
-            <link rel="stylesheet" href="assets/css/catalog.css">
-            <link rel="stylesheet" href="assets/css/news.css">
-            <link rel="stylesheet" href="assets/css/log.css">
-            <link rel="stylesheet" href="assets/css/simple_page.css">
+            <link rel="stylesheet" href="{{asset('assets/css/base.css')}}">
+            <link rel="stylesheet" href="{{asset('assets/css/main.css')}}">
+            <link rel="stylesheet" href="{{asset('assets/css/goods.css')}}">
+            <link rel="stylesheet" href="{{asset('assets/css/cart.css')}}">
+            <link rel="stylesheet" href="{{asset('assets/css/catalog.css')}}">
+            <link rel="stylesheet" href="{{asset('assets/css/news.css')}}">
+            <link rel="stylesheet" href="{{asset('assets/css/log.css')}}">
+            <link rel="stylesheet" href="{{asset('assets/css/simple_page.css')}}">
         {% endblock %}
     </head>
     <body>
@@ -27,9 +27,9 @@
                     <div class="main-logo-left">
                         <div class="upper-logo">
                             <a href="{{ path('main') }}">
-                                <img src="assets/img/base/main_logo.png">
+                                <img src="{{asset('assets/img/base/main_logo.png')}}">
                                 <div class="bottom-logo">
-                                    <img src="assets/img/base/wind_d.png">
+                                    <img src="{{asset('assets/img/base/wind_d.png')}}">
                                 </div>
                             </a>
                         </div>
@@ -52,12 +52,13 @@
                     <div class="right-half-header-logos">
                         <div class="user">
                           <a href="/login">
-                            <img src="assets/img/base/user.png" alt="">
+
+                            <img src="{{asset('assets/img/base/user.png')}}" alt="">
                           </a>
                         </div>
                         <div class="shopping">
                           <a href="{{ path('cart')}}">
-                            <img src="assets/img/base/shopping-cart.png" alt="">
+                            <img src="{{asset('assets/img/base/shopping-cart.png')}}" alt="">
                           </a>
                         </div>
 
@@ -132,13 +133,11 @@
             <div class="center-side-footer">
               <a href="{{ path('catalog') }}">Ветрогенераторы</a>
               <a href="{{ path('catalog') }}">Обслуживание</a>
-              <a href="{{ path('catalog') }}">О нас</a>
+              <a href="{{ path('about') }}">О нас</a>
               <a href="{{ path('catalog') }}">Рекомендации</a>
-              <a href="{{ path('catalog') }}">Новости</a>
-              <a href="{{ path('catalog') }}">Карьера</a>
-              <a href="{{ path('catalog') }}">Проекты</a>
-              <a href="{{ path('catalog') }}">Доставка</a>
-              <a href="{{ path('catalog') }}">Контакты</a>
+              <a href="{{ path('news') }}">Новости</a>
+              <a href="{{ path('delivery') }}">Доставка</a>
+              <a href="{{ path('contacts') }}">Контакты</a>
             </div>
             <div class="right-side-footer">
                 <div class="social">
