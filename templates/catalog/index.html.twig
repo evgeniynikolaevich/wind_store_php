@@ -1,6 +1,9 @@
     {% extends "base/base.html.twig"%}
     {% block title %}{{title}}{% endblock %}
                 {% block body %}
+                <div class="main-title-block">
+                {{main_title}}  
+                </div>
                 <div class="catalog ">
                 <div class="name-categotegory title-catalog main-title-block ">
                  <p> Генераторы Доступно: {{generators|length}}</p>

@@ -1,9 +1,16 @@
 {% extends "base/base.html.twig"%}
 
 {% block title %}Welcome!{% endblock %}
+
   {% block body %}
+  <div class="main-title-block">
+    {{main_title}}
+  </div>
+  <div class="news-block-main">
     {%for news in all_news%}
         {% include '/news/news.html.twig' %}
     {% endfor%}
+  </div>
+
   {% endblock %}
 {% block javascripts %}{% endblock %}

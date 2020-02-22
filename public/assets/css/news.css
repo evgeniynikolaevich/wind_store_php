@@ -21,3 +21,13 @@ flex-direction: column;
 .news-full-discr{
 font-size: 16px;
 }
+.news-block-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  animation: cubic-bezier;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  flex-wrap: wrap;
+}

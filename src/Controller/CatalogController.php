@@ -17,7 +17,8 @@ class CatalogController extends AbstractController
         $gen = $generator->findAll();
         $serv = $service->findAll();
         return $this->render('catalog/index.html.twig', [
-            'title' => 'каталог',
+            'main_title' => 'EURUS/Каталог',
+            'title'=>'каталог',
             'generators' =>$gen,
             'services'=>$serv
         ]);

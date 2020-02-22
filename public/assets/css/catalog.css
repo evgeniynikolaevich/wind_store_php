@@ -36,6 +36,7 @@ width: 200px;
 }
 .service-logo{
   height: 100px;
+  margin: 20px;
 }
 button.button-info-about-services{
   border: none;
@@ -58,6 +59,6 @@ input.about-generator{
   font-style: normal;
   line-height: 45px;
   font-size: 18px;
-  
+
 }
 .

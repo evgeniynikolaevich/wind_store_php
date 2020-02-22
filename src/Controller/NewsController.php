@@ -17,7 +17,8 @@ class NewsController extends AbstractController
     {
         $news = $news_rep->findAll();
         return $this->render('news/index.html.twig', [
-            'all_news'=>$news
+            'all_news'=>$news,
+            'main_title'=>"EURUS/Все новости"
         ]);
     }
     /**
