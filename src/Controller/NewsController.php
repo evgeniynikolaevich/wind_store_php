@@ -31,4 +31,16 @@ class NewsController extends AbstractController
             'news'=>$news
         ]);
     }
+
+    /**
+     * @Route("/news/id={id}")
+     */
+    public function news_by_ids(NewsRepository $news_rep,$id)
+    {
+
+        $news = $news_rep->find($id);
+        return $this->render('news/one_news.html.twig', [
+            'news'=>$news
+        ]);
+    }
 }

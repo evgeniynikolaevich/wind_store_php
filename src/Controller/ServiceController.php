@@ -19,4 +19,16 @@ class ServiceController extends AbstractController
           'service' =>$serv,
       ]);
   }
+  /**
+    * @Route("/services/{id}")
+    */
+   public function service_by_ids(ServiceRepository $serv_rep,$id)
+   {
+       $serv = $serv_rep->find($id);
+       return $this->render('service/index.html.twig', [
+
+           'title' => $serv->getTitle(),
+           'service' =>$serv,
+       ]);
+   }
 }

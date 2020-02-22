@@ -13,8 +13,7 @@ class SimplePageController extends AbstractController
     public function about()
     {
         return $this->render('simple_page/about.html.twig', [
-            'controller_name' => 'SimplePageController',
-        ]);
+        'main_title' => 'EURUS/О компании']);
     }
     /**
      * @Route("/contacts", name="contacts")
@@ -22,8 +21,7 @@ class SimplePageController extends AbstractController
     public function contacts()
     {
         return $this->render('simple_page/contacts.html.twig', [
-
-        ]);
+          'main_title' => 'EURUS/контакты']);
     }
     /**
      * @Route("/delivery", name="delivery")
@@ -31,8 +29,7 @@ class SimplePageController extends AbstractController
     public function delivery()
     {
         return $this->render('simple_page/delivery.html.twig', [
-
-        ]);
+           'main_title' => 'EURUS/доставка']);
     }
     /**
      * @Route("/faq", name="faq")
